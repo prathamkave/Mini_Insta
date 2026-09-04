@@ -1,7 +1,7 @@
 import postModel from "../models/post.model.js";
 import { sendFiles } from "../services/storage.service.js";
 
-const creatPost = async (req, res) => {
+export const creatPost = async (req, res) => {
 	const { caption } = req.body;
 	const file = req.file;
 
@@ -25,4 +25,12 @@ const creatPost = async (req, res) => {
 	});
 };
 
-export default creatPost;
+export const getAllPost = async (req, res) => {
+	const posts = await postModel.find();
+
+	return res.status(200).json({
+		success: true,
+		message: "Posts fetched successfully",
+		posts,
+	});
+};
