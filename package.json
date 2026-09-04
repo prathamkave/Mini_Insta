@@ -1,0 +1,32 @@
+{
+	"name": "mini_insta",
+	"version": "1.0.0",
+	"description": "A full-stack social media application inspired by Instagram, built to practice real-world **CRUD operations, REST APIs, image uploads, cloud storage, and frontend-backend integration**.",
+	"main": "index.js",
+	"type": "module",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"dev": "nodemon src/server.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/prathamkave/Mini_Insta.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/prathamkave/Mini_Insta/issues"
+	},
+	"homepage": "https://github.com/prathamkave/Mini_Insta#readme",
+	"dependencies": {
+		"dotenv": "^17.4.2",
+		"express": "^5.2.1",
+		"imagekit": "^6.0.0",
+		"mongoose": "^9.9.4",
+		"multer": "^2.3.0"
+	},
+	"devDependencies": {
+		"nodemon": "^3.1.14"
+	}
+}
